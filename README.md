@@ -7,6 +7,9 @@ Send me good lock :')
   Para poder ejecutar el proyecto tendras que usar Net Beans, ya que con ese IDE realice el proyecto.
   En la carpeta EstructurasDatos/src/ esta el código para que se haga más fácil usarlo.
   A continuación una breve explicación del proyecto:
+  
   Colas:
+  
   Listas enlazadas:
-  Pilas:
+  
+Pilas:
