@@ -54,14 +54,4 @@ public class Pila {
         JOptionPane.showMessageDialog(null, Lista);
         Lista = "";
     }
-    
-    //ESTA DE MÁS ESTE Método para conocer cual es el último dato ingresado
-//    public String MostrarUltimoDatoIngresado(){//DE MAS
-//        return UltimoNodoIngresado.URL;
-//    }
-    
-    //ESTA DE MÁS ESTE Método para conocer el tamaño de la Pila 
-//    public int TamanoPila(){
-//        return tamano;
-//    }
 }

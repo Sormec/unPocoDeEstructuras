@@ -71,7 +71,12 @@ public class Principal {
                         break;
                         
                     case 7:
-                        pila.MostrarValores();
+                        if(!pila.PilaVacia()){
+                            pila.MostrarValores();
+                        } else {
+                            JOptionPane.showMessageDialog(null, "La pila esta vacia");
+                        }
+                        
                         break;
                         
                     case 8:
