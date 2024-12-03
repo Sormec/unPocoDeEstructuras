@@ -27,9 +27,7 @@ public class Cola {
             primero = nuevo;
             ultimo = nuevo;
         } else {
-            //nuevo.Siguiente = ultimo;
-            //ultimo = nuevo;
-            ultimo.Siguiente = nuevo;
+            ultimo.EnlaceNodo = nuevo;//aquí se enlazan el nuevo y ultimo Nodo
             ultimo = nuevo;
         }
         tamano++;
@@ -45,7 +43,7 @@ public class Cola {
             ultimo = null;
                 
         }else{//el segundo en la Cola pasa a ser el primero
-            primero = primero.Siguiente;
+            primero = primero.EnlaceNodo;
         }
         tamano--;
         return nombre;
@@ -57,15 +55,15 @@ public class Cola {
         String colaInvertida;
         while (recorrido != null){
             cola += recorrido.Informacion + " ";
-            recorrido = recorrido.Siguiente;
+            recorrido = recorrido.EnlaceNodo;
         }
         String cadena [] = cola.split(" ");
         
         colaInvertida = "|| Cola del Banco ||\n";
         for(int i = cadena.length-1; i >= 0 ;i--){
-            colaInvertida += "->" + cadena[i];
+            colaInvertida += " -> " + cadena[i];
         }
-        
+        colaInvertida = colaInvertida + " || VENTANILLA";
         JOptionPane.showMessageDialog(null,colaInvertida);
         cola = "";
     }

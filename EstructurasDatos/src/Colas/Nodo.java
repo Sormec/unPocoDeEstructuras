@@ -2,11 +2,11 @@ package Colas;
 
 public class Nodo {
     String Informacion;
-    Nodo Siguiente;
+    Nodo EnlaceNodo;
 
     public Nodo(String Informacion) {
         this.Informacion = Informacion;
-        this.Siguiente = null;
+        this.EnlaceNodo = null;
     }
     
     

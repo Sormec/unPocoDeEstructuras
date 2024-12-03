@@ -17,7 +17,7 @@ public class Principal {
                           "|| COLA DEL BANCO PICHINCHA||\n"
                         + "Menú de Opciones\n\n"
                         + "1. Insertar un nodo\n"
-                        + "2. Extraer un nodo\n"
+                        + "2. Atender (Extraer) un nodo\n"
                         + "3. Mostrar contenido de la Cola\n"
                         + "4. Salir.\n\n"));
 
