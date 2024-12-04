@@ -2,10 +2,10 @@ package Pilas;
 
 public class Nodo {
     String URL;
-    Nodo siguiente;
+    Nodo enlaceNodo;
     
     public Nodo(String URL){
         this.URL = URL;
-        siguiente = null;
+        enlaceNodo = null;
     }
 }

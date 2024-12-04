@@ -21,16 +21,16 @@ public class Pila {
     
     //Método para insertar un nodo en la pila
     public void InsertarNodo(String URL) {
-        Nodo nuevo_nocdo = new Nodo(URL);
-        nuevo_nocdo.siguiente = UltimoNodoIngresado;//enlaza con el nodo de ABAJO
-        UltimoNodoIngresado = nuevo_nocdo;
+        Nodo nuevo_nodo = new Nodo(URL);
+        nuevo_nodo.enlaceNodo = UltimoNodoIngresado;//enlaza con el nodo de ABAJO
+        UltimoNodoIngresado = nuevo_nodo;
         tamano++;
     }
     
     //Método para eliminar un nodo de la pila
     public String EliminarNodo(){
         String auxiliar = UltimoNodoIngresado.URL;
-        UltimoNodoIngresado = UltimoNodoIngresado.siguiente;
+        UltimoNodoIngresado = UltimoNodoIngresado.enlaceNodo;
         tamano--;
         return auxiliar;
     }
@@ -48,7 +48,7 @@ public class Pila {
         while(recorrido != null){
             //+= siginifica que es acumulador de Strings
             Lista += "|"+recorrido.URL+"|\n";//guarda la ultima URL y da enter
-            recorrido = recorrido.siguiente;
+            recorrido = recorrido.enlaceNodo;
         }
         Lista += "----------------";
         JOptionPane.showMessageDialog(null, Lista);

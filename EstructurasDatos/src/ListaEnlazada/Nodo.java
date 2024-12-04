@@ -1,17 +1,17 @@
  package ListaEnlazada;
 
 /* @author alejo*/
-public class Node {
+public class Nodo {
     private String Dato = "";
-    Node Siguiente;
+    Nodo EnlaceNodo;
 
-    public Node() {
+    public Nodo() {
         this.Dato = "";
-        this.Siguiente = null;
+        this.EnlaceNodo = null;
     }
-    public Node(String Dato) { 
+    public Nodo(String Dato) { 
         this.Dato = Dato;
-        this.Siguiente = null;
+        this.EnlaceNodo = null;
         
     }
     
